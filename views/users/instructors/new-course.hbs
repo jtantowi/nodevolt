@@ -1,0 +1,20 @@
+<section>
+    <div>
+        {{#if message}}
+        <p> {{message}} </p>
+        {{/if}}
+    </div>
+    <div>
+        <form action="/course/new" method="post">
+            <div>
+                <label for="title">Course Title</label>
+                <input type="text" name="title" value="{{title}}" required>
+            </div>
+            <div>
+                <label for="description">Course Description</label>
+                <textarea name="description" id="" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>

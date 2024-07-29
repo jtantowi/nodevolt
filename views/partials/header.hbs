@@ -1,0 +1,22 @@
+<nav>
+    <ul>
+        {{#if local.username}}
+        <li><a href="/all-courses">All Courses</a></li>
+        <li><a href='/my-courses'>My Courses</a></li>
+        <li><a href='/profile'>My Profile</a></li>
+
+        {{#ifEqualsHelper role 'student'}}
+        <li><a href='/instructor'>Become Instructor</a></li>
+        {{/ifEqualsHelper}}
+
+        <li>
+            <form action="/logout" method="post">
+                <button type="submit">Logout</button>
+            </form>
+        </li>
+        {{else}}
+        <li><a href="/register">Register</a></li>
+        <li><a href="/login">Login</a></li>
+        {{/if}}
+    </ul>
+</nav>

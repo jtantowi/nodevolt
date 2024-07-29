@@ -1,0 +1,17 @@
+<section>
+    <div>
+        {{#if error_msg}}
+        <p> {{error_msg}} </p>
+        {{/if}}
+    </div>
+    <span>{{role}}</span>
+    <h1>Welcome {{local.username}}</h1>
+    <figure>
+        <img src="{{profilePictureUrl}}" alt="profile-avatar">
+    </figure>
+    <p><a href="/profile/{{_id}}/edit">Edit Profile</a></p>
+    {{#ifEqualsHelper role 'instructor'}}
+    <p><a href='/course/new'>Register New Course</a></p>
+    {{/ifEqualsHelper}}
+    <p><a href="/my-courses">My Courses</a></p>
+</section>

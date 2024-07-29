@@ -1,0 +1,53 @@
+<section>
+    {{#if success_msg}}
+    <span>{{success_msg}}</span>
+    {{/if}}
+
+    {{#if user.coursesTaught.length}}
+    <article>
+        <h2>Courses I'm Teaching</h2>
+        <ul>
+            {{#each user.coursesTaught}}
+            <li>
+                <div>
+                    <h3> {{this.title}} </h3>
+                    <p> {{this.description}} </p>
+                    <a href="/my-courses/teach/{{this._id}}">More Details</a>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </article>
+    {{else}}
+    {{#ifEqualsHelper user.role 'instructor'}}
+    <article>
+        <h2>Courses I'm Teaching</h2>
+        <p>You aren't teaching any courses yet!</p>
+        <p><a href="/course/new">Create New Course</a></p>
+    </article>
+    {{/ifEqualsHelper}}
+    {{/if}}
+
+
+
+    <article>
+        <h2>Courses I'm Taking</h2>
+        {{#if user.coursesLearned.length}}
+        <ul>
+            {{#each user.coursesLearned}}
+            <li>
+                <div>
+                    <h3> {{this.title}} </h3>
+                    <a href="/my-courses/learn/{{this._id}}">More Details</a>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        {{else}}
+        <div>
+            <p>You aren't taking any courses yet!</p>
+            <p><a href="/all-courses">Register To A Course</a></p>
+        </div>
+        {{/if}}
+    </article>
+</section>

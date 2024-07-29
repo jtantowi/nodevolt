@@ -1,0 +1,32 @@
+<section>
+    <div>
+        {{#if success_msg}}
+        <p>{{success_msg}}</p>
+        {{/if}}
+    </div>
+
+    <h2>{{isCourse.title}}</h2>
+    <p>{{isCourse.description}}</p>
+
+    <div>
+        <figure>
+            <img src="{{isCourse.imageUrl}}" alt="course cover image">
+        </figure>
+        <div>
+            <div>
+                <div>
+                    <p>Registered Students: <span>{{isCourse.students.length}}</span></p>
+                    <a href="/my-courses/teach/{{isCourse._id}}/studentList">See Student List</a>
+                </div>
+                <div>
+                    <p>Edit Course</p>
+                    <a href="/my-courses/teach/{{isCourse._id}}/edit">Edit Course</a>
+                </div>
+                <div>
+                    <p>All Lessons</p>
+                    <a href="/my-courses/teach/{{isCourse._id}}/all-lessons">See All Lessons</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section>
+    <div>
+        {{#if message}}
+        <p> {{message}} </p>
+        {{/if}}
+    </div>
+    <div>
+        <form action="/my-courses/teach/{{id}}/lesson/new" method="post">
+            <div>
+                <label for="topic">Lesson Topic</label>
+                <input type="text" name="topic" value="{{topic}}" required>
+            </div>
+            <div>
+                <label for="videoUrl">Lesson Video Url</label>
+                <input type="url" name="videoUrl" placeholder="https://example.com" size="30" value="{{videoUrl}}"
+                    required>
+            </div>
+            <div>
+                <label for="content">Lesson Description</label>
+                <textarea name="content" id="" cols="30" rows="10" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
