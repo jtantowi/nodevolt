@@ -52,7 +52,7 @@ module.exports = {
   googleAuth: {
     clientId: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackUrl: 'http://localhost:3000/auth/google/callback',
+    callbackUrl: 'http://nodevolt-production.up.railway.app/auth/google/callback',
   },
 
   /* Cloudinary */
