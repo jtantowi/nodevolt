@@ -1,99 +1,99 @@
-## Getting Started
+## Start
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Petunjuk ini akan membuat Anda mendapatkan salinan proyek dan berjalan di mesin lokal Anda untuk tujuan pengembangan dan pengujian.
 
-### Prerequisites
+### Setup
 
-What things you need to install the software and how to install them.
+Hal-hal apa saja yang Anda perlukan untuk menginstal perangkat lunak dan cara menginstalnya.
 
 ```
-NPM / Yarn
-Code Editor (This app was built on VSCode)
+NPM / Benang
+Editor Kode (Aplikasi ini dibuat di VSCode)
 Git
-Cloudinary Account
-OAuth 2.0 Clients (Google API)
+Akun Cloudinary
+Klien OAuth 2.0 (Google API)
 ```
 
 **Cloudinary**
 
-Cloudinary is an end-to-end image- and video-management solution for websites and mobile apps, covering everything from image and video uploads, storage, manipulations, optimizations to delivery.
+Cloudinary adalah solusi manajemen gambar dan video menyeluruh untuk situs web dan aplikasi seluler, yang mencakup segala hal mulai dari pengunggahan gambar dan video, penyimpanan, manipulasi, optimalisasi hingga pengiriman.
 
-All images and/or videos uploaded within this app are stored in a cloudinary account. You will need to create your account if you want to properly test this functionality out locally. 
+Semua gambar dan/atau video yang diunggah dalam aplikasi ini disimpan di akun cloudinary. Anda harus membuat akun jika ingin menguji fungsi ini secara lokal dengan benar.
 
-*Setup:* 
+*Mempersiapkan:*
 
-1.  Create an account at [Cloudinary](https://cloudinary.com/).
+1. Buat akun di [Cloudinary](https://cloudinary.com/).
 
-2.  Navigate to your Cloudinary dashboard to find the variables you will later need to add to the ```.env``` file (See How To Use section below)
+2. Navigasikan ke dasbor Cloudinary Anda untuk menemukan variabel yang nantinya perlu Anda tambahkan ke file ```.env``` (Lihat bagian Cara Menggunakan di bawah)
 
 
 **Google API (OAuth 2.0)**
 
-Google APIs are application programming interfaces developed by Google which allow communication with Google Services and their integration to other services.
+Google API adalah antarmuka pemrograman aplikasi yang dikembangkan oleh Google yang memungkinkan komunikasi dengan Layanan Google dan integrasinya ke layanan lain.
 
-The authentication process of this application utilizes Passport's [Local](http://www.passportjs.org/packages/passport-local/) and [Google Strategy](http://www.passportjs.org/docs/google/). 
+Proses autentikasi aplikasi ini menggunakan [Lokal](http://www.passportjs.org/packages/passport-local/) dan [Strategi Google](http://www.passportjs.org/docs/google/) Paspor .
 
-In order for Google to identify which application's Passport interacts with their API, you will need to obtain clientID and clientSecret in [Google Developers Console](https://console.developers.google.com). You may refer to this [guide](https://developers.google.com/adwords/api/docs/guides/authentication#create_a_client_id_and_client_secret) for the steps.
+Agar Google dapat mengidentifikasi Passport aplikasi mana yang berinteraksi dengan API mereka, Anda perlu mendapatkan clientID dan clientSecret di [Google Developers Console](https://console.developers.google.com). Anda dapat membaca [panduan] ini(https://developers.google.com/adwords/api/docs/guides/authentication#create_a_client_id_and_client_secret) untuk mengetahui langkah-langkahnya.
 
 
-### Installing
+### Menginstal
 
-To get this project on your local machine, you first need to clone it using the `git clone` command.
-
-```
-git clone https://github.com/sudyhardy/nodevolt.git
-```
-
-Running this on your terminal will ensure you receive the latest version with all it's changes.
-
-Once you've cloned it, install all dependencies using:
+Untuk mendapatkan proyek ini di mesin lokal Anda, Anda harus mengkloningnya terlebih dahulu menggunakan perintah `git clone`.
 
 ```
-npm install
+git klon https://github.com/sudyhardy/nodevolt.git
 ```
 
-This should retrieve all the necessary dependencies named in the [package.json](https://github.com/reMRKableDev/OnLearn/blob/main/package.json) file.
+Menjalankan ini di terminal Anda akan memastikan Anda menerima versi terbaru dengan semua perubahannya.
 
-### How To Use:
-
-Once dependencies are installed, be sure to include a ```.env``` file with the necessary environment variable:
+Setelah Anda mengkloningnya, instal semua dependensi menggunakan:
 
 ```
-LOCAL_MONGO_URI = <mongodb uri goes here...>
-SESSION_SECRET = <session secret goes here...>
-PORT = <port number goes here...>
-
-DUMMY_PASSWORD = <custom dummy pwd goes here...>
-DUMMY_EDIT_PASSWORD_WEAK = <custom weak dummy pwd goes here...>
-DUMMY_EDIT_PASSWORD_STRONG = <custom strong dummy pwd goes here...>
-
-GOOGLE_CLIENT_ID = <your google client id goes here...>
-GOOGLE_CLIENT_SECRET = <your google client secret goes here...>
-
-CLOUDINARY_NAME = <your cloudinary name goes here...>
-CLOUDINARY_KEY = <your cloudinary key goes here...>
-CLOUDINARY_SECRET = <your cloudinary secret goes here...>
+instalasi npm
 ```
 
-When everything is in place, the application can be run locally using:
+Ini akan mengambil semua dependensi yang diperlukan yang disebutkan dalam file [package.json](https://github.com/reMRKableDev/OnLearn/blob/main/package.json).
+
+### Cara Penggunaan:
+
+Setelah dependensi diinstal, pastikan untuk menyertakan file ```.env``` dengan variabel lingkungan yang diperlukan:
 
 ```
-npm run dev
+LOCAL_MONGO_URI = <mongodb uri masuk ke sini...>
+SESSION_SECRET = <rahasia sesi ada di sini...>
+PORT = <nomor port ada di sini...>
+
+DUMMY_PASSWORD = <pwd tiruan khusus ada di sini...>
+DUMMY_EDIT_PASSWORD_WEAK = <pwd tiruan lemah khusus ada di sini...>
+DUMMY_EDIT_PASSWORD_STRONG = <pwd tiruan kuat khusus ada di sini...>
+
+GOOGLE_CLIENT_ID = <ID klien Google Anda ada di sini...>
+GOOGLE_CLIENT_SECRET = <rahasia klien Google Anda ada di sini...>
+
+CLOUDINARY_NAME = <nama awan Anda ada di sini...>
+CLOUDINARY_KEY = <kunci cloudinary Anda ada di sini...>
+CLOUDINARY_SECRET = <rahasia keruh Anda ada di sini...>
 ```
 
-## Running tests 🧪
-
-The testing framework utilized is Jest. Tests can be run by using the command:
+Ketika semuanya sudah siap, aplikasi dapat dijalankan secara lokal menggunakan:
 
 ```
-npm test
-
-OR
-
-npm run test
+npm jalankan dev
 ```
 
-To run tests and see the code coverage. RUn using the command:
+## Tes Run 🧪
+
+Kerangka pengujian yang digunakan adalah Jest. Pengujian dapat dijalankan dengan menggunakan perintah:
+
 ```
-npm run coverage
+tes npm
+
+ATAU
+
+npm menjalankan tes
+```
+
+Untuk menjalankan tes dan melihat cakupan kode. Jalankan menggunakan perintah:
+```
+npm menjalankan cakupan
 ```
