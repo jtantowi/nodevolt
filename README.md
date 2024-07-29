@@ -7,11 +7,11 @@ Petunjuk ini akan membuat Anda mendapatkan salinan proyek dan berjalan di mesin 
 Hal-hal apa saja yang Anda perlukan untuk menginstal perangkat lunak dan cara menginstalnya.
 
 ```
-NPM / Benang
-Editor Kode (Aplikasi ini dibuat di VSCode)
+NPM / Yarn
+Code Editor (This app was built on VSCode)
 Git
-Akun Cloudinary
-Klien OAuth 2.0 (Google API)
+Cloudinary Account
+OAuth 2.0 Clients (Google API)
 ```
 
 **Cloudinary**
@@ -41,7 +41,7 @@ Agar Google dapat mengidentifikasi Passport aplikasi mana yang berinteraksi deng
 Untuk mendapatkan proyek ini di mesin lokal Anda, Anda harus mengkloningnya terlebih dahulu menggunakan perintah `git clone`.
 
 ```
-git klon https://github.com/sudyhardy/nodevolt.git
+git clone https://github.com/sudyhardy/nodevolt.git
 ```
 
 Menjalankan ini di terminal Anda akan memastikan Anda menerima versi terbaru dengan semua perubahannya.
@@ -49,7 +49,7 @@ Menjalankan ini di terminal Anda akan memastikan Anda menerima versi terbaru den
 Setelah Anda mengkloningnya, instal semua dependensi menggunakan:
 
 ```
-instalasi npm
+npm install
 ```
 
 Ini akan mengambil semua dependensi yang diperlukan yang disebutkan dalam file [package.json](https://github.com/reMRKableDev/OnLearn/blob/main/package.json).
@@ -78,7 +78,7 @@ CLOUDINARY_SECRET = <rahasia keruh Anda ada di sini...>
 Ketika semuanya sudah siap, aplikasi dapat dijalankan secara lokal menggunakan:
 
 ```
-npm jalankan dev
+npm run dev
 ```
 
 ## Tes Run 🧪
@@ -86,14 +86,14 @@ npm jalankan dev
 Kerangka pengujian yang digunakan adalah Jest. Pengujian dapat dijalankan dengan menggunakan perintah:
 
 ```
-tes npm
+npm test
 
 ATAU
 
-npm menjalankan tes
+npm run test
 ```
 
 Untuk menjalankan tes dan melihat cakupan kode. Jalankan menggunakan perintah:
 ```
-npm menjalankan cakupan
+npm run coverage
 ```
