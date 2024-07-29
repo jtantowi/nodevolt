@@ -41,7 +41,7 @@ In order for Google to identify which application's Passport interacts with thei
 To get this project on your local machine, you first need to clone it using the `git clone` command.
 
 ```
-git clone 
+git clone https://github.com/sudyhardy/nodevolt.git
 ```
 
 Running this on your terminal will ensure you receive the latest version with all it's changes.
