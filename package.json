@@ -70,10 +70,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:reMRKableDev/OnLearn.git"
+    "url": "git@github.com:sudyhardy/nodevolt.git"
   },
   "bugs": {
-    "url": "https://github.com/reMRKableDev/OnLearn/issues"
+    "url": "https://github.com/sudyhardy/nodevolt/issues"
   },
-  "homepage": "https://github.com/reMRKableDev/OnLearn#readme"
+  "homepage": "https://github.com/sudyhardy/nodevolt#readme"
 }
