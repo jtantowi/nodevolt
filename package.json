@@ -1,11 +1,11 @@
 {
-  "name": "node-onlearn",
-  "author": "Malcolm R. Kente (reMRKable Dev)",
+  "name": "nodevolt",
+  "author": "Sudi Hardi",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=node-onlearn:* nodemon ./bin/www",
+    "dev": "DEBUG=node-nodevolt:* nodemon ./bin/www",
     "test": "jest --watchAll=true --runInBand --detectOpenHandles",
     "coverage": "jest --coverage --runInBand"
   },
